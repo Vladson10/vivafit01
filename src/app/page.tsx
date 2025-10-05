@@ -58,7 +58,7 @@ interface Recipe {
   category: string
 }
 
-export default function ViveFitApp() {
+export default function Page() {
   const [currentSection, setCurrentSection] = useState<Section>('home')
   const [currentMealPlan, setCurrentMealPlan] = useState<MealPlan | null>(null)
   const [favorites, setFavorites] = useState<string[]>([])
