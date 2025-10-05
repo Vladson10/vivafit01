@@ -68,7 +68,8 @@ export default function Page() {
   const [isTimerRunning, setIsTimerRunning] = useState(false)
   const [currentWorkout, setCurrentWorkout] = useState<Exercise[]>([])
   const [workoutCompleted, setWorkoutCompleted] = useState(false)
-  const [weeklyRoutine, setWeeklyRoutine] = useState<{[key: string]: string[]}>({})
+  const [weeklyRoutine, setWeeklyRoutine] = useState<{ [key: string]: string[] }>({})
+
 
   // Timer effect
   useEffect(() => {
